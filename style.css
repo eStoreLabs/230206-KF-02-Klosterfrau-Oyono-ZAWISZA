@@ -1,15 +1,4 @@
-@font-face {
-  font-family: "HelveticaNeueLTPro-Cn";
-  src: url("./fonts/HelveticaNeueLTPro-Cn.otf") format("opentype");
-}
-@font-face {
-  font-family: "HelveticaNeueLTProBd";
-  src: url("./fonts/HelveticaNeueLTProBd.otf") format("opentype");
-}
-@font-face {
-  font-family: "HelveticaNeueLTPro-ThCn";
-  src: url("./fonts/HelveticaNeueLTPro-ThCn.otf") format("opentype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300;400;500;600&display=swap");
 @keyframes es-slideIn {
   0% {
     transform: translateX(-100%);
@@ -27,7 +16,7 @@
   }
 }
 .es-oyono, #es-oyono {
-  font-family: "HelveticaNeueLTPro-Cn";
+  font-family: "Inter Tight", sans-serif;
   font-size: 25px;
   font-weight: 300;
   line-height: 1.2;
@@ -44,7 +33,7 @@
   box-sizing: border-box;
 }
 .es-oyono p, #es-oyono p {
-  font-family: "HelveticaNeueLTPro-Cn";
+  font-family: "Inter Tight", sans-serif;
   color: #fff;
 }
 .es-oyono html,
@@ -57,6 +46,10 @@
 }
 .es-oyono img, #es-oyono img {
   max-width: 100%;
+}
+.es-oyono em, #es-oyono em {
+  font-style: normal;
+  color: #66c1bf;
 }
 .es-oyono .es-kv, #es-oyono .es-kv {
   padding: 40px 15px;
@@ -76,7 +69,8 @@
   display: none;
 }
 .es-oyono .es-kv__title, #es-oyono .es-kv__title {
-  font-family: "HelveticaNeueLTPro-ThCn";
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
   font-size: 30px;
   margin: 0;
   padding: 20px 0 0 20px;
@@ -95,6 +89,8 @@
   width: 100%;
 }
 .es-oyono .es-kv__single, #es-oyono .es-kv__single {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
   padding: 10px;
   border: 1px solid #fff;
   border-top-left-radius: 15px;
@@ -115,7 +111,7 @@
   text-align: center;
   margin: 0;
 }
-.es-oyono .es-kv__desc span, #es-oyono .es-kv__desc span {
+.es-oyono .es-kv__desc--span, #es-oyono .es-kv__desc--span {
   color: #66c1bf;
 }
 .es-oyono .es-kv__bottomImg, #es-oyono .es-kv__bottomImg {
@@ -134,9 +130,12 @@
   padding: 30px 15px;
   z-index: 2;
   position: relative;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
 }
 .es-oyono .es-info__title, #es-oyono .es-info__title {
-  font-family: "HelveticaNeueLTPro-ThCn";
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
   font-size: 30px;
   margin: 0;
 }
@@ -181,14 +180,16 @@
   margin: 0;
 }
 .es-oyono .es-phase__name, #es-oyono .es-phase__name {
-  font-family: "HelveticaNeueLTPro-ThCn";
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
   color: #66c1bf;
   font-size: 20px;
   margin: 0;
   min-width: 220px;
 }
 .es-oyono .es-phase__desc, #es-oyono .es-phase__desc {
-  font-family: "HelveticaNeueLTPro-ThCn";
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
   font-size: 18px;
 }
 .es-oyono .es-phase__lineCtn, #es-oyono .es-phase__lineCtn {
@@ -210,8 +211,12 @@
   right: -30px;
   top: -20px;
 }
+.es-oyono .es-icons, #es-oyono .es-icons {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
+}
 .es-oyono .es-icons__title, #es-oyono .es-icons__title {
-  font-family: "HelveticaNeueLTPro-ThCn";
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 30px;
   text-align: center;
@@ -243,13 +248,15 @@
   color: #66c1bf;
 }
 .es-oyono .es-results, #es-oyono .es-results {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
   padding: 30px 0;
   background: rgb(12, 62, 105);
   background: linear-gradient(0deg, rgb(12, 62, 105) 19%, rgb(24, 25, 42) 85%);
   padding: 15px;
 }
 .es-oyono .es-results__title, #es-oyono .es-results__title {
-  font-family: "HelveticaNeueLTPro-ThCn";
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 30px;
   text-align: center;
@@ -324,13 +331,15 @@
   text-transform: uppercase;
 }
 .es-oyono .es-ingr, #es-oyono .es-ingr {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
   background: rgb(12, 62, 105);
   background: linear-gradient(180deg, rgb(12, 62, 105) 65%, rgb(24, 25, 42) 100%);
   padding: 15px;
 }
 .es-oyono .es-ingr__title, #es-oyono .es-ingr__title {
   margin: 0;
-  font-family: "HelveticaNeueLTPro-ThCn";
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 30px;
   text-align: center;
@@ -359,7 +368,8 @@
 }
 .es-oyono .es-ingr__th, #es-oyono .es-ingr__th {
   text-transform: uppercase;
-  font-family: "HelveticaNeueLTPro-ThCn";
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
   font-size: 16px;
   text-align: left;
   padding: 0px 10px;
@@ -372,11 +382,15 @@
   padding: 5px 10px;
   border-top: 1px solid #fff;
 }
-.es-oyono .es-ingr__td span, #es-oyono .es-ingr__td span {
-  font-family: "HelveticaNeueLTPro-ThCn";
+.es-oyono .es-ingr__td em, #es-oyono .es-ingr__td em {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
   opacity: 0.8;
 }
 .es-oyono .es-claims, #es-oyono .es-claims {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
   padding: 20px 15px;
 }
 .es-oyono .es-claims__item, #es-oyono .es-claims__item {
@@ -398,7 +412,8 @@
   min-width: 300px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "HelveticaNeueLTPro-ThCn";
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
 }
 @media (min-width: 760px) {
   .es-oyono .es-kv, #es-oyono .es-kv {

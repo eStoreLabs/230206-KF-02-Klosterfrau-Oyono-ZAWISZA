@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300;400;500;600&display=swap');
 // @font-face {
 //     font-family: "HelveticaNeueLTPro-Cn";
 //     src: url("./fonts/HelveticaNeueLTPro-Cn.otf") format("opentype");
@@ -11,12 +11,13 @@
     //     font-family: "HelveticaNeueLTPro-ThCn";
     //     src: url("./fonts/HelveticaNeueLTPro-ThCn.otf") format("opentype");
     // }
-    // $title:"HelveticaNeueLTPro-ThCn";
-    // $regular: "HelveticaNeueLTPro-Cn";
-    // $bold: "HelveticaNeueLTProBd";
+    //$title:"HelveticaNeueLTPro-ThCn";
+    //$regular: "HelveticaNeueLTPro-Cn";
+    //$bold: "HelveticaNeueLTProBd";
     
     $ff-inter: 'Inter Tight', sans-serif;
     $fw-thin: 100;
+    $fw-light: 300;
     $fw-regular: 400;
     $fw-bold: 600;
 
@@ -47,7 +48,7 @@
     .es-oyono, #es-oyono{
         // font-family: $regular;
         font-family: $ff-inter;
-        font-weight: $fw-regular;
+        
         font-size: 25px;
         font-weight: 300;
         line-height: 1.2;
@@ -108,6 +109,7 @@
                 &__title{
                     //font-family: $title;
                     font-family: $ff-inter;
+                    font-weight: $fw-light;
                     font-size: 30px;
                     margin: 0;
                     padding: 20px 0 0 20px;
@@ -127,6 +129,8 @@
                     width: 100%;
                 }
                 &__single{
+                    font-family: $ff-inter;
+                    font-weight: $fw-light;
                     padding: 10px;
                     border: 1px solid $white;
                     border-top-left-radius: 15px;
@@ -169,12 +173,17 @@
                 padding: 30px 15px;
                 z-index: 2;
                 position: relative;
+                font-family: $ff-inter;
+                font-weight: $fw-light;
                 &__title{
-                    font-family: $title;
+                    //font-family: $title;
+                    font-family: $ff-inter;
+                    font-weight: $fw-bold;
                     font-size: 30px;
                     margin: 0;
                 }
                 &__desc{
+                    
                     font-size: 18px;
                     text-align: center;
                     span{
@@ -216,14 +225,18 @@
                     margin: 0;
                 }
                 &__name{
-                    font-family: $title;
+                    //font-family: $title;
+                    font-family: $ff-inter;
+                    font-weight: $fw-bold;
                     color: $teal;
                     font-size: 20px;
                     margin: 0;
                     min-width: 220px;
                 }
                 &__desc{
-                    font-family: $title;
+                    //font-family: $title;
+                    font-family: $ff-inter;
+                    font-weight: $fw-light;
                     font-size: 18px;
                 }
                 &__lineCtn{
@@ -247,8 +260,11 @@
                 }
             }
             .es-icons{
+                font-family: $ff-inter;
+                font-weight: $fw-light;
                 &__title{
-                    font-family: $title;
+                    //font-family: $title;
+                    font-weight: $fw-bold;
                     text-transform: uppercase;
                     font-size: 30px;
                     text-align: center;
@@ -281,12 +297,16 @@
                 }
             }
             .es-results{
+                font-family: $ff-inter;
+                font-weight: $fw-light;
                 padding: 30px 0;
                 background: rgb(12,62,105);
                 background: linear-gradient(0deg, rgba(12,62,105,1) 19%, rgba(24,25,42,1) 85%);
                 padding: 15px;
                 &__title{
-                    font-family: $title;
+                    //font-family: $title;
+                    
+                    font-weight: $fw-bold;
                     text-transform: uppercase;
                     font-size: 30px;
                     text-align: center;
@@ -363,12 +383,16 @@
             }
            
             .es-ingr{
+                font-family: $ff-inter;
+                font-weight: $fw-light;
                 background: rgb(12,62,105);
                 background: linear-gradient(180deg, rgba(12,62,105,1) 65%, rgba(24,25,42,1) 100%);
                 padding: 15px;
                 &__title{
                     margin: 0;
-                    font-family: $title;
+                    //font-family: $title;
+                   
+                    font-weight: $fw-bold;
                     text-transform: uppercase;
                     font-size: 30px;
                     text-align: center;
@@ -397,7 +421,9 @@
                 }
                 &__th{
                     text-transform: uppercase;
-                    font-family: $title;
+                    //font-family: $title;
+                    font-family: $ff-inter;
+                    font-weight: $fw-bold;
                     font-size: 16px;
                     text-align: left;
                     padding:0px 10px;
@@ -409,13 +435,18 @@
                     font-size: 16px;
                     padding:5px 10px;
                     border-top: 1px solid $white;
-                    span{
-                        font-family: $title;
+                    em {
+                        //font-family: $title;
+                        font-family: $ff-inter;
+                        font-weight: $fw-bold;
                         opacity: .8;
                     }
                 }
             }
             .es-claims{
+                font-family: $ff-inter;
+                    font-weight: $fw-light;
+                    line-height: 1.5;
                 padding: 20px 15px;
                 &__item{
                     font-size: 12px;
@@ -436,7 +467,9 @@
                     min-width: 300px;
                     text-align: center;
                     text-transform: uppercase;
-                    font-family: $title;
+                    //font-family: $title;
+                    font-family: $ff-inter;
+                    font-weight: $fw-bold;
                 }
                
             }
