@@ -1,327 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=13IgjWREeFWjrvCHZt_lqeNQg2NvYUqEw"> -->
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-<title>Oyono</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Oyono</title>
+  </head>
+  <body>
     <!-- TODO -->
     <!-- 1. host images on GH or drive -->
     <!-- 2. final styles host on drive, inject with JS -->
     <div class="es-oyono" id="es-oyono">
-        <div class="es-kv">
-            <img src="./img/kv-bg.png" alt="" class="es-kv__circlesBg">
-            <div class="es-kv__text">
-                <p class="es-kv__title">OYONO<sup>®</sup> NOC</p>
-                <p class="es-kv__title">Zgłębia <br> naturę snu</p>
-            </div>
-            <div class="es-kv__ctn">
-                <div class="es-kv__packshotCtn">
-                    <img src="./img/kv-packshot.png" alt="" class="es-kv__packshot">
-                </div>
-                <div class="es-kv__content">
-                    <div class="es-kv__single es-kv__single--first">
-                        <p class="es-kv__desc">Uwalnia 20% melatoniny <em> 
-                        w 10 minut*</em></p>
-                    </div>
-                    <div class="es-kv__single es-kv__single--second">
-                        <p class="es-kv__desc">Uwalnia składniki <em>
-                        nawet przez 8h*</em></p>
-                    </div>
-                </div>
-            </div>
-            <div class="es-kv__bottomImg">
-                <img src="./img/kv-water-2.png" alt="" class="es-kv__waterImg">
-            </div>
+      <div class="es-kv">
+        <img src="./img/kv-bg.png" alt="" class="es-kv__circlesBg" />
+        <div class="es-kv__text">
+          <p class="es-kv__title">OYONO<sup>®</sup> NOC</p>
+          <p class="es-kv__title">
+            Zgłębia <br />
+            naturę snu
+          </p>
         </div>
-        <div class="es-info">
-            <p class="es-info__title">OYONO<sup>®</sup> NOC</p>
-            <div class="es-flex">
-                <p class="es-info__desc">
-                to suplement diety, który ma postać
-                <em>3-fazowych tabletek</em>
-                gdzie składniki uwalniane są etapowo,
-                aby wspomóc jakość nocnego odpoczynku. </p>
+        <div class="es-kv__ctn">
+          <div class="es-kv__packshotCtn">
+            <img src="./img/kv-packshot.png" alt="" class="es-kv__packshot" />
+          </div>
+          <div class="es-kv__content">
+            <div class="es-kv__single es-kv__single--first">
+              <p class="es-kv__desc">
+                Uwalnia 20% melatoniny <em> w 10 minut*</em>
+              </p>
             </div>
-            
-
-            <ul class="es-info__list">
-                <li class="es-info__listItem">ułatwia <em>szybsze zasypianie<sup>1</sup></em></li>
-                <li class="es-info__listItem">wspiera <em>spokojny sen<sup>2</sup></em></li>
-                <li class="es-info__listItem">sprzyja <em>przespaniu nocy<sup>3</sup></em></li>
-            </ul>
+            <div class="es-kv__single es-kv__single--second">
+              <p class="es-kv__desc">
+                Uwalnia składniki <em> nawet przez 8h*</em>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="es-kv__bottomImg">
+          <img src="./img/kv-water-2.png" alt="" class="es-kv__waterImg" />
+        </div>
+      </div>
+      <div class="es-info">
+        <p class="es-info__title">OYONO<sup>®</sup> NOC</p>
+        <div class="es-flex">
+          <p class="es-info__desc">
+            to suplement diety, który ma postać
+            <em>3-fazowych tabletek</em>
+            gdzie składniki uwalniane są etapowo, aby wspomóc jakość nocnego
+            odpoczynku.
+          </p>
         </div>
 
-        <div class="es-phase">
-            <div class="es-phase__content">
-                <div class="es-phase__single">
-                    <div class="es-phase__nameCtn">
-                        <p class="es-phase__name">Faza natychmiastowa</p>
-                        <div class="es-phase__lineCtn">
-                            <div class="es-phase__line"></div>
-                        </div>
-                    </div>
-                    <p class="es-phase__desc">
-                        Szybko, w ciągu 10 minut*, uwalnia do organizmu melatoninę, ekstrakt z kozłka lekarskiego i witaminę B6
-                    </p>
-                </div>
+        <ul class="es-info__list">
+          <li class="es-info__listItem">
+            ułatwia <em>szybsze zasypianie<sup>1</sup></em>
+          </li>
+          <li class="es-info__listItem">
+            wspiera <em>spokojny sen<sup>2</sup></em>
+          </li>
+          <li class="es-info__listItem">
+            sprzyja <em>przespaniu nocy<sup>3</sup></em>
+          </li>
+        </ul>
+      </div>
 
-                <div class="es-phase__single">
-                    <div class="es-phase__nameCtn">
-                        <p class="es-phase__name">Faza przedłużonego uwalniania</p>
-                        <div class="es-phase__lineCtn">
-                            <div class="es-phase__line"></div>
-                        </div>
-                    </div>
-                    <p class="es-phase__desc">Długotrwałe, kontrolowane, przedłużone uwalnianie melatoniny i ekstraktu
-                        z męczennicy cielistej – do 8 godzin* 
-                    </p>
-                </div>
-
-                <div class="es-phase__single">
-                    <div class="es-phase__nameCtn">
-                        <p class="es-phase__name">Faza ciągła</p>
-                        <div class="es-phase__lineCtn">
-                            <div class="es-phase__line"></div>
-                        </div>
-                    </div>
-                    <p class="es-phase__desc">
-                        Uwalniany jest ekstrakt z głogu i melisy lekarskiej, aby wspomóc spokojny sen
-                    </p>
-                </div>
+      <div class="es-phase">
+        <div class="es-phase__content">
+          <div class="es-phase__single">
+            <div class="es-phase__nameCtn">
+              <p class="es-phase__name">Faza natychmiastowa</p>
+              <div class="es-phase__lineCtn">
+                <div class="es-phase__line"></div>
+              </div>
             </div>
-            <div class="es-phase__imgCtn">
-                <img src="./img/tablets.png" alt="" class="es-phase__img">
-            </div>
-        </div>
-
-        <div class="es-icons">
-            <p class="es-icons__title">
-                Przekonujące efekty w teście użytkowników
+            <p class="es-phase__desc">
+              Szybko, w ciągu 10 minut*, uwalnia do organizmu melatoninę,
+              ekstrakt z kozłka lekarskiego i witaminę B6
             </p>
-            <div class="es-icons__ctn">
-                <div class="es-icons__single">
-                    <div class="es-icons__imgCtn">
-                        <img src="./img/icon-1.png" alt="" class="es-icons__img">
-                    </div>
-                    <p class="es-icons__desc">
-                        <em>Znacząco skrócony czas zasypiania</em> <br>
-                        z 40 do 30 minut <br>
-                        już po tygodniu stosowania; <br>
-                        z 40 do 20 minut <br>
-                        po dwóch tygodniach stosowania<sup>4</sup> <br>
-                    </p>
-                </div>
+          </div>
 
-                <div class="es-icons__single">
-                    <div class="es-icons__imgCtn">
-                        <img src="./img/icon-2.png" alt="" class="es-icons__img">
-                    </div>
-                    <p class="es-icons__desc">
-                        <em>Wydłużona mediana długości snu</em> <br>
-                        z 6 do 7 godzin <br>
-                        już po 3 tygodniach stosowania<sup>4</sup>
-                    </p>
-                </div>
-
-                <div class="es-icons__single">
-                    <div class="es-icons__imgCtn">
-                        <img src="./img/icon-3.png" alt="" class="es-icons__img">
-                    </div>
-                    <p class="es-icons__desc">
-                        <em>69% uczestników oceniło korzyść</em> <br>
-                        ze stosowania OYONO® NOC jako <br>
-                        „dobrą” lub „bardzo dobrą” <sup>4</sup>
-                    </p>
-                </div>
-
-                <div class="es-icons__single">
-                    <div class="es-icons__imgCtn">
-                        <img src="./img/icon-4.png" alt="" class="es-icons__img">
-                    </div>
-                    <p class="es-icons__desc">
-                        <em>Dobra tolerancja</em> <br>
-                        96% ocenia tolerancję produktu jako <br>
-                        “dobrą” lub “bardzo dobrą” <sup>4</sup>
-                    </p>
-                </div>
+          <div class="es-phase__single">
+            <div class="es-phase__nameCtn">
+              <p class="es-phase__name">Faza przedłużonego uwalniania</p>
+              <div class="es-phase__lineCtn">
+                <div class="es-phase__line"></div>
+              </div>
             </div>
-        </div>
-
-        <div class="es-results">
-            <p class="es-results__title">
-                działanie składników oraz zalecenia dotyczące spożycia
+            <p class="es-phase__desc">
+              Długotrwałe, kontrolowane, przedłużone uwalnianie melatoniny i
+              ekstraktu z męczennicy cielistej – do 8 godzin*
             </p>
-            <div class="es-results__ctn">
-                <div class="es-results__imgCtn">
-                    <img src="./img/packshot.png" alt="" class="es-results__img">
-                </div>
-                <div class="es-results__content">
-                    <div class="es-results__single">
-                        <p class="es-results__text">
-                            <em>Kozłek lekarski (waleriana) i melisa lekarska</em> - wspomagają zasypianie,
-                            stan relaksu i zdrowy, nieprzerwany sen<sup>1-3</sup>
-                        </p>
-                        <div class="es-results__lineCtn">
-                            <div class="es-results__line"></div>
-                        </div>
-                    </div>
+          </div>
 
-                    <div class="es-results__single">
-                        <p class="es-results__text">
-                            <em>Głóg</em> - przyczynia się do zmniejszenia niepokoju oraz wspiera lepszy sen<sup>2</sup>
-                        </p>
-                        <div class="es-results__lineCtn">
-                            <div class="es-results__line"></div>
-                        </div>
-                    </div>
+          <div class="es-phase__single">
+            <div class="es-phase__nameCtn">
+              <p class="es-phase__name">Faza ciągła</p>
+              <div class="es-phase__lineCtn">
+                <div class="es-phase__line"></div>
+              </div>
+            </div>
+            <p class="es-phase__desc">
+              Uwalniany jest ekstrakt z głogu i melisy lekarskiej, aby wspomóc
+              spokojny sen
+            </p>
+          </div>
+        </div>
+        <div class="es-phase__imgCtn">
+          <img src="./img/tablets.png" alt="" class="es-phase__img" />
+        </div>
+      </div>
 
-                    <div class="es-results__single">
-                        <p class="es-results__text">
-                            <em>Męczennica cielista</em> - pomaga w odprężeniu i wspiera spokojny sen<sup>2</sup>
-                        </p>
-                        <div class="es-results__lineCtn">
-                            <div class="es-results__line"></div>
-                        </div>
-                    </div>
+      <div class="es-icons">
+        <p class="es-icons__title">Przekonujące efekty w teście użytkowników</p>
+        <div class="es-icons__ctn">
+          <div class="es-icons__single">
+            <div class="es-icons__imgCtn">
+              <img src="./img/icon-1.png" alt="" class="es-icons__img" />
+            </div>
+            <p class="es-icons__desc">
+              <em>Znacząco skrócony czas zasypiania</em> <br />
+              z 40 do 30 minut <br />
+              już po tygodniu stosowania; <br />
+              z 40 do 20 minut <br />
+              po dwóch tygodniach stosowania<sup>4</sup> <br />
+            </p>
+          </div>
 
-                    <div class="es-results__single">
-                        <p class="es-results__text">
-                            <em>Melatonina</em> - przyczynia się do skrócenia czasu zasypiania<sup>1</sup>
-                        </p>
-                        <div class="es-results__lineCtn">
-                            <div class="es-results__line"></div>
-                        </div>
-                    </div>
+          <div class="es-icons__single">
+            <div class="es-icons__imgCtn">
+              <img src="./img/icon-2.png" alt="" class="es-icons__img" />
+            </div>
+            <p class="es-icons__desc">
+              <em>Wydłużona mediana długości snu</em> <br />
+              z 6 do 7 godzin <br />
+              już po 3 tygodniach stosowania<sup>4</sup>
+            </p>
+          </div>
 
-                    <div class="es-results__single">
-                        <p class="es-results__text">
-                            <em>Witamina B6</em> - pomaga w prawidłowym funkcjonowaniu układu nerwowego
-                            oraz przyczynia się do regulacji aktywności hormonalnej1
-                        </p>
-                        <div class="es-results__lineCtn">
-                            <div class="es-results__line"></div>
-                        </div>
-                    </div>
-                </div>
+          <div class="es-icons__single">
+            <div class="es-icons__imgCtn">
+              <img src="./img/icon-3.png" alt="" class="es-icons__img" />
+            </div>
+            <p class="es-icons__desc">
+              <em>69% uczestników oceniło korzyść</em> <br />
+              ze stosowania OYONO® NOC jako <br />
+              „dobrą” lub „bardzo dobrą” <sup>4</sup>
+            </p>
+          </div>
+
+          <div class="es-icons__single">
+            <div class="es-icons__imgCtn">
+              <img src="./img/icon-4.png" alt="" class="es-icons__img" />
+            </div>
+            <p class="es-icons__desc">
+              <em>Dobra tolerancja</em> <br />
+              96% ocenia tolerancję produktu jako <br />
+              “dobrą” lub “bardzo dobrą” <sup>4</sup>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="es-results">
+        <p class="es-results__title">
+          działanie składników oraz zalecenia dotyczące spożycia
+        </p>
+        <div class="es-results__ctn">
+          <div class="es-results__imgCtn">
+            <img src="./img/packshot.png" alt="" class="es-results__img" />
+          </div>
+          <div class="es-results__content">
+            <div class="es-results__single">
+              <p class="es-results__text">
+                <em>Kozłek lekarski (waleriana) i melisa lekarska</em> -
+                wspomagają zasypianie, stan relaksu i zdrowy, nieprzerwany
+                sen<sup>1-3</sup>
+              </p>
+              <div class="es-results__lineCtn">
+                <div class="es-results__line"></div>
+              </div>
             </div>
 
-            <div class="es-results__iconsCtn">
-                <div class="es-results__iconSingle">
-                    <img src="./img/icon-5.png" alt="" class="es-results__icon">
-                    <p class="es-results__iconText">1 raz dziennie 30 <br> minut przed snem</p>
-                </div>
-
-                <div class="es-results__iconSingle">
-                    <img src="./img/icon-6.png" alt="" class="es-results__icon">
-                    <p class="es-results__iconText">od 18 <br>lat</p>
-                </div>
-
-                <div class="es-results__iconSingle">
-                    <img src="./img/icon-7.png" alt="" class="es-results__icon">
-                    <p class="es-results__iconText">nieodpowiedni dla <br> kobiet w ciąży i <br> karmiących piersią</p>
-                </div>
-
-                <div class="es-results__iconSingle">
-                    <img src="./img/icon-8.png" alt="" class="es-results__icon">
-                    <p class="es-results__iconText">produkt <br> bezglutenowy</p>
-                </div>
-
-                <div class="es-results__iconSingle">
-                    <img src="./img/icon-9.png" alt="" class="es-results__icon">
-                    <p class="es-results__iconText">produkt <br> wegański</p>
-                </div>
-
-                <div class="es-results__iconSingle">
-                    <img src="./img/icon-10.png" alt="" class="es-results__icon">
-                    <p class="es-results__iconText">produkt <br> bez laktosy</p>
-                </div>
-
-                <div class="es-results__iconSingle">
-                    <img src="./img/icon-11.png" alt="" class="es-results__icon">
-                    <p class="es-results__iconText">bez efektu przyzwyczajenia<sup>5</sup> </p>
-                </div>
-                
+            <div class="es-results__single">
+              <p class="es-results__text">
+                <em>Głóg</em> - przyczynia się do zmniejszenia niepokoju oraz
+                wspiera lepszy sen<sup>2</sup>
+              </p>
+              <div class="es-results__lineCtn">
+                <div class="es-results__line"></div>
+              </div>
             </div>
+
+            <div class="es-results__single">
+              <p class="es-results__text">
+                <em>Męczennica cielista</em> - pomaga w odprężeniu i wspiera
+                spokojny sen<sup>2</sup>
+              </p>
+              <div class="es-results__lineCtn">
+                <div class="es-results__line"></div>
+              </div>
+            </div>
+
+            <div class="es-results__single">
+              <p class="es-results__text">
+                <em>Melatonina</em> - przyczynia się do skrócenia czasu
+                zasypiania<sup>1</sup>
+              </p>
+              <div class="es-results__lineCtn">
+                <div class="es-results__line"></div>
+              </div>
+            </div>
+
+            <div class="es-results__single">
+              <p class="es-results__text">
+                <em>Witamina B6</em> - pomaga w prawidłowym funkcjonowaniu
+                układu nerwowego oraz przyczynia się do regulacji aktywności
+                hormonalnej1
+              </p>
+              <div class="es-results__lineCtn">
+                <div class="es-results__line"></div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="es-ingr">
-            <div class="es-ingr__titleCtn">
-                <p class="es-ingr__title">
-                    skład
-                </p>
-                <p class="es-ingr__subtitle">
-                    zawartość składników w porcji zalecanej do spożycia w ciągu dnia <em>(1 tabletka)</em>
-                </p>
-            </div>
-            <div class="es-ingr__ctn">
-                <table class="es-ingr__table">
-                    <tr class="es-ingr__tr">
-                        <th class="es-ingr__th es-ingr__th--teal">1 tabletka</th>
-                        <th class="es-ingr__th"></th>
-                    </tr>
-                    <tr class="es-ingr__tr">
-                        <td class="es-ingr__td">Witamina E6</td>
-                        <td class="es-ingr__td">1.4 mg <em>(100% RWS*)</em></td>
-                    </tr>
-                    <tr class="es-ingr__tr">
-                        <td class="es-ingr__td">Ekstrakt z liści kwiatów głogu</td>
-                        <td class="es-ingr__td">100 mg</td>
-                    </tr>
-                    <tr class="es-ingr__tr">
-                        <td class="es-ingr__td">Ekstrakt z korzenia i kłącza kozłka lekarskiego</td>
-                        <td class="es-ingr__td">100 mg</td>
-                    </tr>
-                    <tr class="es-ingr__tr">
-                        <td class="es-ingr__td">Ekstrakt z ziela i kwiatów męczennicy cielistej</td>
-                        <td class="es-ingr__td">100 mg</td>
-                    </tr>
-                    <tr class="es-ingr__tr">
-                        <td class="es-ingr__td">Ekstrakt z liści melisy lekarskiej</td>
-                        <td class="es-ingr__td">50 mg</td>
-                    </tr>
-                    <tr class="es-ingr__tr">
-                        <td class="es-ingr__td">Melatonina</td>
-                        <td class="es-ingr__td">1 mg</td>
-                    </tr>
-                </table>
-                <img src="./img/circle.png" alt="" class="es-ingr__img">
-            </div>
-        </div>
+        <div class="es-results__iconsCtn">
+          <div class="es-results__iconSingle">
+            <img src="./img/icon-5.png" alt="" class="es-results__icon" />
+            <p class="es-results__iconText">
+              1 raz dziennie 30 <br />
+              minut przed snem
+            </p>
+          </div>
 
-        <div class="es-claims">
-            <p class="es-claims__item">* dane laboratoryjne dostępne na życzenie</p>
-            <br>
-            <p class="es-claims__item">
-                <sup>1</sup>Melatonina przyczynia się do skrócenia czasu zasypiania. Witamina B6 pomaga w prawidłowym funkcjonowaniu układu nerwowego oraz przyczynia się do regulacji aktywności hormonalnej. Kozłek lekarski (waleriana) i melisa lekarska wspomagają zasypianie.
+          <div class="es-results__iconSingle">
+            <img src="./img/icon-6.png" alt="" class="es-results__icon" />
+            <p class="es-results__iconText">od 18 <br />lat</p>
+          </div>
+
+          <div class="es-results__iconSingle">
+            <img src="./img/icon-7.png" alt="" class="es-results__icon" />
+            <p class="es-results__iconText">
+              nieodpowiedni dla <br />
+              kobiet w ciąży i <br />
+              karmiących piersią
             </p>
-            <p class="es-claims__item">
-                <sup>2</sup>Melisa lekarska i kozłek lekarski (waleriana) wspomagają stan relaksacji oraz zdrowy sen. Głóg przyczynia się do zmniejszenia niepokoju oraz wspiera lepszy sen. Męczennica cielista pomaga w odprężeniu i wspierał spokojny sen.
+          </div>
+
+          <div class="es-results__iconSingle">
+            <img src="./img/icon-8.png" alt="" class="es-results__icon" />
+            <p class="es-results__iconText">
+              produkt <br />
+              bezglutenowy
             </p>
-            <p class="es-claims__item">
-                <sup>3</sup>Kozłek lekarski (waleriana) i melisa lekarska wspomagają nieprzerwany sen. 
+          </div>
+
+          <div class="es-results__iconSingle">
+            <img src="./img/icon-9.png" alt="" class="es-results__icon" />
+            <p class="es-results__iconText">
+              produkt <br />
+              wegański
             </p>
-            <p class="es-claims__item">
-                <sup>4</sup>In-Home-Use Test | Exevia GmbH | Report Consumers Germany | Listopad 2020, n = 301 Użytkownicy w wieku od 50 do 75 lat, którzy mają problemy z zasypianiem / przespaniem nocy i w ciągu ostatnich 4 tygodni przyjmowali leki nasenne / uspokajające (bez przepisu lekarza). Raport dostępny na życzenie.
+          </div>
+
+          <div class="es-results__iconSingle">
+            <img src="./img/icon-10.png" alt="" class="es-results__icon" />
+            <p class="es-results__iconText">
+              produkt <br />
+              bez laktosy
             </p>
-            <p class="es-claims__item">
-                <sup>5</sup>Opublikowane analizy bezpieczeństwa wymienionych składników (dostępne publicznie) nie wykazały ich działania uzależniającego; Xie Z i wsp. Neurol Res. 2017 Jun;39(6):559-565. (melatolina); Committee on Herbal Medicinal Products (HMPC) EMA/HMPC/159076/2014 (Głóg); Committee on Herbal Medicinal Products (HMPC) EMA EMA/HMPC/196746/2012 (melisa lekarska); Committee on Herbal Medicinal Products (HMPC) EMA/HMPC/669738/2013 (Męczennica cielista); Committee on Herbal Medicinal Products (HMPC) EMA/HMPC/150846/2015 (Kosłek Lekarski).
+          </div>
+
+          <div class="es-results__iconSingle">
+            <img src="./img/icon-11.png" alt="" class="es-results__icon" />
+            <p class="es-results__iconText">
+              bez efektu przyzwyczajenia<sup>5</sup>
             </p>
+          </div>
         </div>
-        <div class="es-footer">
-            <img src="./img/oyono-logo.png" alt="" class="es-footer__logo">
-            <p class="es-footer__text">oyo.03.2023.23</p>
-            <div class="es-footer__text">suplement diety</div>
+      </div>
+
+      <div class="es-ingr">
+        <div class="es-ingr__titleCtn">
+          <p class="es-ingr__title">skład</p>
+          <p class="es-ingr__subtitle">
+            zawartość składników w porcji zalecanej do spożycia w ciągu dnia
+            <em>(1 tabletka)</em>
+          </p>
         </div>
+        <div class="es-ingr__ctn">
+          <table class="es-ingr__table">
+            <tr class="es-ingr__tr">
+              <th class="es-ingr__th es-ingr__th--teal">1 tabletka</th>
+              <th class="es-ingr__th"></th>
+            </tr>
+            <tr class="es-ingr__tr">
+              <td class="es-ingr__td">Witamina E6</td>
+              <td class="es-ingr__td">1.4 mg <em>(100% RWS*)</em></td>
+            </tr>
+            <tr class="es-ingr__tr">
+              <td class="es-ingr__td">Ekstrakt z liści kwiatów głogu</td>
+              <td class="es-ingr__td">100 mg</td>
+            </tr>
+            <tr class="es-ingr__tr">
+              <td class="es-ingr__td">
+                Ekstrakt z korzenia i kłącza kozłka lekarskiego
+              </td>
+              <td class="es-ingr__td">100 mg</td>
+            </tr>
+            <tr class="es-ingr__tr">
+              <td class="es-ingr__td">
+                Ekstrakt z ziela i kwiatów męczennicy cielistej
+              </td>
+              <td class="es-ingr__td">100 mg</td>
+            </tr>
+            <tr class="es-ingr__tr">
+              <td class="es-ingr__td">Ekstrakt z liści melisy lekarskiej</td>
+              <td class="es-ingr__td">50 mg</td>
+            </tr>
+            <tr class="es-ingr__tr">
+              <td class="es-ingr__td">Melatonina</td>
+              <td class="es-ingr__td">1 mg</td>
+            </tr>
+          </table>
+          <img src="./img/circle.png" alt="" class="es-ingr__img" />
+        </div>
+      </div>
+
+      <div class="es-claims">
+        <p class="es-claims__item">* dane laboratoryjne dostępne na życzenie</p>
+        <br />
+        <p class="es-claims__item">
+          <sup>1</sup>Melatonina przyczynia się do skrócenia czasu zasypiania.
+          Witamina B6 pomaga w prawidłowym funkcjonowaniu układu nerwowego oraz
+          przyczynia się do regulacji aktywności hormonalnej. Kozłek lekarski
+          (waleriana) i melisa lekarska wspomagają zasypianie.
+        </p>
+        <p class="es-claims__item">
+          <sup>2</sup>Melisa lekarska i kozłek lekarski (waleriana) wspomagają
+          stan relaksacji oraz zdrowy sen. Głóg przyczynia się do zmniejszenia
+          niepokoju oraz wspiera lepszy sen. Męczennica cielista pomaga w
+          odprężeniu i wspierał spokojny sen.
+        </p>
+        <p class="es-claims__item">
+          <sup>3</sup>Kozłek lekarski (waleriana) i melisa lekarska wspomagają
+          nieprzerwany sen.
+        </p>
+        <p class="es-claims__item">
+          <sup>4</sup>In-Home-Use Test | Exevia GmbH | Report Consumers Germany
+          | Listopad 2020, n = 301 Użytkownicy w wieku od 50 do 75 lat, którzy
+          mają problemy z zasypianiem / przespaniem nocy i w ciągu ostatnich 4
+          tygodni przyjmowali leki nasenne / uspokajające (bez przepisu
+          lekarza). Raport dostępny na życzenie.
+        </p>
+        <p class="es-claims__item">
+          <sup>5</sup>Opublikowane analizy bezpieczeństwa wymienionych
+          składników (dostępne publicznie) nie wykazały ich działania
+          uzależniającego; Xie Z i wsp. Neurol Res. 2017 Jun;39(6):559-565.
+          (melatolina); Committee on Herbal Medicinal Products (HMPC)
+          EMA/HMPC/159076/2014 (Głóg); Committee on Herbal Medicinal Products
+          (HMPC) EMA EMA/HMPC/196746/2012 (melisa lekarska); Committee on Herbal
+          Medicinal Products (HMPC) EMA/HMPC/669738/2013 (Męczennica cielista);
+          Committee on Herbal Medicinal Products (HMPC) EMA/HMPC/150846/2015
+          (Kosłek Lekarski).
+        </p>
+      </div>
+      <div class="es-footer">
+        <img src="./img/oyono-logo.png" alt="" class="es-footer__logo" />
+        <p class="es-footer__text">oyo.03.2023.23</p>
+        <div class="es-footer__text">suplement diety</div>
+      </div>
     </div>
     <!-- <script>
         function getStyles(href) {
@@ -340,5 +399,5 @@
           }
         };
       </script> -->
-</body>
+  </body>
 </html>
