@@ -1,615 +1,615 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300;400;500;600&display=swap');
-// @font-face {
-//     font-family: "HelveticaNeueLTPro-Cn";
-//     src: url("./fonts/HelveticaNeueLTPro-Cn.otf") format("opentype");
-//     }
-    // @font-face {
-    //   font-family: "HelveticaNeueLTProBd";
-    // src: url("./fonts/HelveticaNeueLTProBd.otf") format("opentype");
-    // }
-    // @font-face {
-    //     font-family: "HelveticaNeueLTPro-ThCn";
-    //     src: url("./fonts/HelveticaNeueLTPro-ThCn.otf") format("opentype");
-    // }
-    //$title:"HelveticaNeueLTPro-ThCn";
-    //$regular: "HelveticaNeueLTPro-Cn";
-    //$bold: "HelveticaNeueLTProBd";
-    
-    $ff-inter: 'Inter Tight', sans-serif;
-    $fw-thin: 100;
-    $fw-light: 300;
-    $fw-regular: 400;
-    $fw-bold: 600;
+// @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300;400;500;600&display=swap');
+@font-face {
+  font-family: "HelveticaNeueLTPro-Cn";
+  src: url("https://estorelabs.github.io/es-hosting/fonts/HelveticaNeueLTPro/HelveticaNeueLTPro-Cn.otf") format("opentype");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeueLTProBd";
+  src: url("https://estorelabs.github.io/es-hosting/fonts/HelveticaNeueLTPro/HelveticaNeueLTProBd.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeueLTPro-ThCn";
+  src: url("https://estorelabs.github.io/es-hosting/fonts/HelveticaNeueLTPro/HelveticaNeueLTPro-ThCn.otf") format("opentype");
+  font-weight: 600;
+  font-display: swap;
+}
+$title: "HelveticaNeueLTPro-ThCn";
+$regular: "HelveticaNeueLTPro-Cn";
+$bold: "HelveticaNeueLTProBd";
 
-    $teal: #66c1bf;
-    $blue: #233368;
-    $dark-blue: #18192a;
-    $white: #fff;
+$fw-thin: 100;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 600;
 
-    @keyframes es-slideIn {
-        0% {
-            transform: translateX(-100%);
-          }
-        
-          to {
-            transform: translateX(0);
-          }
-        }
-        @keyframes es-slideUp {
-            0% {
-                transform: translateY(100%);
-              }
-            
-              to {
-                transform: translateY(0);
-              }
-            }
+$teal: #66c1bf;
+$blue: #233368;
+$dark-blue: #18192a;
+$white: #fff;
 
-    .es-oyono, #es-oyono{
-        // font-family: $regular;
-        font-family: $ff-inter;
-        
-        font-size: 25px;
-        font-weight: 300;
-        line-height: 1.2;
-        max-width: 998px;
-        min-width: 320px;
-        margin: 0 auto;
-        padding: 0;
-        overflow: hidden;
-        color: $white;
-        background-color: $dark-blue;
-        overflow-x: hidden;
-    
-        * {
-            box-sizing: border-box;
-          }
-          p {
-            font-family: $ff-inter;
-            color: $white;
-          }
+@keyframes es-slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
 
-          html,
-          body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-            }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes es-slideUp {
+  0% {
+    transform: translateY(100%);
+  }
 
-            img{
-                max-width: 100%;
-            }
+  to {
+    transform: translateY(0);
+  }
+}
 
-            em {
-                font-style: normal;
-                color: $teal;
-            }
-            // .es-flex {
-            //     display: inline-flex;
-            //     flex-direction: row;
+.es-oyono,
+#es-oyono {
+  font-family: $regular;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.2;
+  max-width: 998px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: $white;
+  background-color: $dark-blue;
+  overflow-x: hidden;
 
-            // }
-            .es-kv{
-                padding: 40px 15px;
-                background: rgb(24,25,42);
-                background: linear-gradient(90deg, rgba(24,25,42,1) 0%, rgba(35,51,104,1) 46%, rgba(24,25,42,1) 100%);
-                position: relative;
-                &__circlesBg{
-                    position: absolute;
-                    top:0;
-                    right: 0;
-                    display: none;
-                }
-                &__bottomImg{
-                    position: absolute;
-                    bottom:-50px;
-                    display: none;
-                }
-                &__title{
-                    //font-family: $title;
-                    font-family: $ff-inter;
-                    font-weight: $fw-light;
-                    font-size: 30px;
-                    margin: 0;
-                    padding: 20px 0 0 20px;
-                }
-                &__ctn{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 40px;
-                }
-                &__packshotCtn{
-                    max-width: 300px;
-                  
-                }
-                &__packshot{
-                    width: 100%;
-                }
-                &__single{
-                    font-family: $ff-inter;
-                    font-weight: $fw-light;
-                    padding: 10px;
-                    border: 1px solid $white;
-                    border-top-left-radius: 15px;
-                    border-bottom-left-radius: 15px;
-                    border-top-right-radius: 15px;
-                    border-bottom-right-radius: 15px;
-                    margin: 5px;
-                    min-width: 300px;
-                    &--first{
-                        animation: es-slideUp 1s alternate;
-                    }
-                    &--second{
-                        animation: es-slideUp 1.5s alternate;
-                        
-                    }
-                }
-                &__desc{
-                    font-size: 20px;
-                    text-align: center;
-                    margin: 0;
-                    &--span{
-                        color: $teal;
-                    }
-                }
-                &__bottomImg{
-                    position: absolute;
-                    display: none;
-                    z-index: 1;
-                    bottom: -200px;
-                    width: 100%;
-                    margin-bottom: -80px;
-                }
-                &__waterImg{
-                    width: 98%;
-                }
-            }
+  * {
+    box-sizing: border-box;
+  }
+  p {
+    font-family: $regular;
+    color: $white;
+  }
 
-            .es-info{
-                margin: 0;
-                padding: 30px 15px;
-                z-index: 2;
-                position: relative;
-                font-family: $ff-inter;
-                font-weight: $fw-light;
-                &__title{
-                    //font-family: $title;
-                    font-family: $ff-inter;
-                    font-weight: $fw-bold;
-                    font-size: 30px;
-                    margin: 0;
-                }
-                &__desc{
-                    
-                    font-size: 18px;
-                    text-align: center;
-                    span{
-                        color: $teal;
-                    }
-                }
-                &__listItem{
-                    font-size: 18px;
-                    span{
-                        color: $teal;
-                    }
-                }
-            }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
 
-            .es-phase{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 40px 15px;
-                &__content{
-                    max-width: 300px;
-                }
-                &__imgCtn{
-                    max-width: 320px;
-                    margin: 20px;
-                }
-                &__img{
-                    margin-left: 0px;
-                    margin-top: 0px;
-                }
-                &__single{
-                    display: block;
-                }
-                &__nameCtn{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    margin: 0;
-                }
-                &__name{
-                    //font-family: $title;
-                    font-family: $ff-inter;
-                    font-weight: $fw-bold;
-                    color: $teal;
-                    font-size: 20px;
-                    margin: 0;
-                    min-width: 220px;
-                }
-                &__desc{
-                    //font-family: $title;
-                    font-family: $ff-inter;
-                    font-weight: $fw-light;
-                    font-size: 18px;
-                }
-                &__lineCtn{
-                    width: 100%;
-                    margin-left: 10px;
-                    display: none;
-                }
-                &__line{
-                    height: 1px;
-                    width: 100%;
-                    background-color: $teal;
-                    position: relative;
-                    &::after{
-                        content: url(https://raw.githubusercontent.com/eStoreLabs/230206-KF-02-Klosterfrau-Oyono-ZAWISZA/main/img/dot.png);
-                        display: inline-block;
-                        transform: scale(0.6);
-                        position: absolute;
-                        right:-30px;
-                        top:-20px;
-                    }
-                }
-            }
-            .es-icons{
-                font-family: $ff-inter;
-                font-weight: $fw-light;
-                &__title{
-                    //font-family: $title;
-                    font-weight: $fw-bold;
-                    text-transform: uppercase;
-                    font-size: 30px;
-                    text-align: center;
-                    padding: 15px;
-                }
-                &__ctn{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-items: center;
-                }
-                &__single{
-                    width: 220px;
-                    margin: 10px;
-                    min-height: 250px;
-                }
-                &__imgCtn{
-                    min-height: 100px;
-                }
-                &__img{
-                    margin: 0 auto;
-                    display: block;
-                }
-                &__desc{
-                    font-size: 16px;
-                    text-align: center;
-                    span{
-                        color: $teal;
-                    }
-                }
-            }
-            .es-results{
-                font-family: $ff-inter;
-                font-weight: $fw-light;
-                padding: 30px 0;
-                background: rgb(12,62,105);
-                background: linear-gradient(0deg, rgba(12,62,105,1) 19%, rgba(24,25,42,1) 85%);
-                padding: 15px;
-                &__title{
-                    //font-family: $title;
-                    
-                    font-weight: $fw-bold;
-                    text-transform: uppercase;
-                    font-size: 30px;
-                    text-align: center;
-                }
-                &__ctn{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 60px 0;
-                }
-                &__imgCtn{
-                    max-width: 300px;
-                }
-                &__img{
-                    width: 100%;
+  img {
+    max-width: 100%;
+  }
 
-                    object-fit: cover;
-                }
-                &__content{
-                    max-width: 500px;
-                }
-                &__single{
-                    margin: 5px;
-                }
-                &__text{
-                    font-size: 16px;
-                    margin: 5px;
-                    span{
-                        color: $teal;
-                    }
-                }
-                &__lineCtn{
-                    width: 100%;
-                    margin-left: 10px;
-                    display: none;
-                }
-                &__line{
-                    height: 1px;
-                    width: 100%;
-                    background-color: $teal;
-                    position: relative;
-                    margin-left: -30px;
-                    &::after{
-                        content: url(https://raw.githubusercontent.com/eStoreLabs/230206-KF-02-Klosterfrau-Oyono-ZAWISZA/main/img/dot.png);
-                        display: inline-block;
-                        position: absolute;
-                        left:-30px;
-                        top:-20px;
-                        transform: scale(.6);
-                    }
-                }
-                &__iconsCtn{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-items: center;
-                }
-                &__icon{
-                    width: 80px;
-                    margin: 0 auto;
-                    display: block;
-                }
-                &__iconSingle{
-                    width: 110px;
-                    margin: 10px;
-                    height: 170px;
-                }
-                &__iconText{
-                    font-size: 13px;
-                    text-align: center;
-                    text-transform: uppercase;
-                }
-            }
-           
-            .es-ingr{
-                font-family: $ff-inter;
-                font-weight: $fw-light;
-                background: rgb(12,62,105);
-                background: linear-gradient(180deg, rgba(12,62,105,1) 65%, rgba(24,25,42,1) 100%);
-                padding: 15px;
-                &__title{
-                    margin: 0;
-                    //font-family: $title;
-                   
-                    font-weight: $fw-bold;
-                    text-transform: uppercase;
-                    font-size: 30px;
-                    text-align: center;
-                }
-                &__subtitle{
-                    font-size: 20px;
-                    text-align: center;
-                    span{
-                        color: $teal;
-                    }
-                }
-                &__ctn{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-items: center;
-                }
-                &__img{
-                    width: 300px;
-                }
-                &__table{
-                    border-spacing: 10px;
-                    border: 1px solid $white;
-                    border-radius: 15px;
-                    border-collapse: separate;
-                }
-                &__th{
-                    text-transform: uppercase;
-                    //font-family: $title;
-                    font-family: $ff-inter;
-                    font-weight: $fw-bold;
-                    font-size: 16px;
-                    text-align: left;
-                    padding:0px 10px;
-                    &--teal{
-                        color: $teal;
-                    }
-                }
-                &__td{
-                    font-size: 16px;
-                    padding:5px 10px;
-                    border-top: 1px solid $white;
-                    em {
-                        //font-family: $title;
-                        font-family: $ff-inter;
-                        font-weight: $fw-bold;
-                        opacity: .8;
-                    }
-                }
-            }
-            .es-claims{
-                font-family: $ff-inter;
-                    font-weight: $fw-light;
-                    line-height: 1.5;
-                padding: 20px 15px;
-                &__item{
-                    font-size: 12px;
-                    margin: 0;
-                    width: 100%;
-                }
-            }
-            .es-footer{
-                display: flex;
-                flex-wrap: wrap-reverse;
-                align-items: center;
-                justify-content: center;
-                padding: 15px;
-                &__logo{
-                    max-width: 250px;
-                }
-                &__text{
-                    min-width: 300px;
-                    text-align: center;
-                    text-transform: uppercase;
-                    //font-family: $title;
-                    font-family: $ff-inter;
-                    font-weight: $fw-bold;
-                }
-               
-            }
-  
-            @media (min-width: 760px){
-                .es-kv{
-                    position: relative;
-                    &__circlesBg{
-                        position: absolute;
-                        top:0;
-                        right: 100px;
-                        display: block;
-                    }
-                    &__bottomImg{
-                        position: absolute;
-                        bottom:-50px;
-                        display: block;
-                    }
-                    &__title{
-                        font-size: 60px;
-                    }
-                    &__ctn{
-                        flex-direction: row;
-                    }
-                    &__packshotCtn{
-                        max-width: 500px;
-                        z-index: 2;
-                    }
-                    &__content{
-                        margin-left: -10px;
-                        z-index: 0;
-                    }
-                    &__single{
-                        border-top-left-radius:0px;
-                    border-bottom-left-radius: 0px;
-                    &--first{
-                        animation: es-slideIn 1s alternate;
-                    }
-                    &--second{
-                        animation: es-slideIn 1.5s alternate;
-                        
-                    }
-                    }
-                    &__desc{
-                        text-align: left;
-                    }
-                     &__bottomImg{
-                        display: block;
-                     }
-                }
-                .es-info{
-                    &__desc{
-                        width: 68%;
-                        text-align: left;
-                    }
-                }
-                .es-phase{
-                    flex-direction: row;
-                    &__content{
-                        max-width: 500px;
-                    }
-                    &__lineCtn{
-                        display: block;
-                    }
-                    &__line{
-                        transition: all .4s ease;
-                    }
-                    &__imgCtn{
-                        margin: 0;
-                    }
-                    &__img{
-                        margin-left: -10px;
-                        margin-top: -20px;
-                    }
-                }
-                .es-phase__single:hover .es-phase__line{
-                    transform: translateX(20px);
-                }
-                .es-icons{
-                    &__title{
-                        text-align: left;
-                    }
-                }
-                .es-results{
-                    &__title{
-                        text-align: left;
-                    }
-                    &__lineCtn{
-                        display: block;
-                    }
-                    &__line{
-                        transition: all .4s ease;
-                    }
-                    &__icon{
-                        transition: all .4s ease;
-                    }
-                    &__imgCtn{
-                        max-width: 450px;
-                    }
-                    &__img{
-                        margin-right: -120px;
-                    }
-                    &__content{
-                        margin-top: -80px;
-                        margin-left: -50px;
-                    }
-                    
-                }
-                .es-results__single:hover .es-results__line{
-                    transform: translateX(-15px);
-                }
-                .es-results__iconSingle:hover .es-results__icon{
-                    transform: translateY(-15px);
-                }
-                .es-ingr{
-                    &__title{
-                        text-align: left;
-                    }
-                    &__subtitle{
-                        text-align: left;
-                    }
-                    &__th{
-                        padding:0px 30px;
-                    }
-                    &__td{
-                        padding:5px 30px;
-                    }
-                }
-                .es-claims{
-                    padding: 20px 15px;
-                    &__item{
-                        font-size: 12px;
-                        margin: 0;
-                        width: 90%;
-                    }
-                }
+  em {
+    font-style: normal;
+    color: $teal;
+  }
+  // .es-flex {
+  //     display: inline-flex;
+  //     flex-direction: row;
 
-                .es-footer{justify-content: space-between;}
-            }
-            @media (min-width: 900px){
-
-            }
+  // }
+  .es-kv {
+    padding: 40px 15px;
+    background: rgb(24, 25, 42);
+    background: linear-gradient(
+      90deg,
+      rgba(24, 25, 42, 1) 0%,
+      rgba(35, 51, 104, 1) 46%,
+      rgba(24, 25, 42, 1) 100%
+    );
+    position: relative;
+    &__circlesBg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: none;
     }
+    &__bottomImg {
+      position: absolute;
+      bottom: -50px;
+      display: none;
+    }
+    &__title {
+      font-family: $title;
+      font-weight: $fw-light;
+      font-size: 30px;
+      margin: 0;
+      padding: 20px 0 0 20px;
+    }
+    &__ctn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+    &__packshotCtn {
+      max-width: 300px;
+    }
+    &__packshot {
+      width: 100%;
+    }
+    &__single {
+      font-weight: $fw-light;
+      padding: 10px;
+      border: 1px solid $white;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      margin: 5px;
+      min-width: 300px;
+      &--first {
+        animation: es-slideUp 1s alternate;
+      }
+      &--second {
+        animation: es-slideUp 1.5s alternate;
+      }
+    }
+    &__desc {
+      font-size: 20px;
+      text-align: center;
+      margin: 0;
+      &--span {
+        color: $teal;
+      }
+      em {
+        display: block;
+      }
+    }
+    &__bottomImg {
+      position: absolute;
+      display: none;
+      z-index: 1;
+      bottom: -200px;
+      width: 100%;
+      margin-bottom: -80px;
+    }
+    &__waterImg {
+      width: 98%;
+    }
+  }
+
+  .es-info {
+    margin: 0;
+    padding: 30px 15px;
+    z-index: 2;
+    position: relative;
+    font-weight: $fw-light;
+    &__title {
+      font-family: $title;
+      font-weight: $fw-bold;
+      font-size: 30px;
+      margin: 0;
+    }
+    &__desc {
+      font-size: 18px;
+      text-align: center;
+      span {
+        color: $teal;
+      }
+    }
+    &__listItem {
+      font-size: 18px;
+      span {
+        color: $teal;
+      }
+    }
+  }
+
+  .es-phase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    &__content {
+      max-width: 300px;
+    }
+    &__imgCtn {
+      max-width: 320px;
+      margin: 20px;
+    }
+    &__img {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    &__single {
+      display: block;
+    }
+    &__nameCtn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+    }
+    &__name {
+      font-family: $title;
+      font-weight: $fw-bold;
+      color: $teal;
+      font-size: 20px;
+      margin: 0;
+      min-width: 220px;
+    }
+    &__desc {
+      font-family: $title;
+      font-weight: $fw-light;
+      font-size: 18px;
+    }
+    &__lineCtn {
+      width: 100%;
+      margin-left: 10px;
+      display: none;
+    }
+    &__line {
+      height: 1px;
+      width: 100%;
+      background-color: $teal;
+      position: relative;
+      &::after {
+        content: url(https://raw.githubusercontent.com/eStoreLabs/230206-KF-02-Klosterfrau-Oyono-ZAWISZA/main/img/dot.png);
+        display: inline-block;
+        transform: scale(0.6);
+        position: absolute;
+        right: -30px;
+        top: -20px;
+      }
+    }
+  }
+  .es-icons {
+    font-weight: $fw-light;
+    &__title {
+      font-family: $title;
+      font-weight: $fw-bold;
+      text-transform: uppercase;
+      font-size: 30px;
+      text-align: center;
+      padding: 15px;
+    }
+    &__ctn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    &__single {
+      width: 220px;
+      margin: 10px;
+      min-height: 250px;
+    }
+    &__imgCtn {
+      min-height: 100px;
+    }
+    &__img {
+      margin: 0 auto;
+      display: block;
+    }
+    &__desc {
+      font-size: 16px;
+      text-align: center;
+      span {
+        color: $teal;
+      }
+    }
+  }
+  .es-results {
+    font-weight: $fw-light;
+    padding: 30px 0;
+    background: rgb(12, 62, 105);
+    background: linear-gradient(
+      0deg,
+      rgba(12, 62, 105, 1) 19%,
+      rgba(24, 25, 42, 1) 85%
+    );
+    padding: 15px;
+    &__title {
+      font-family: $title;
+
+      font-weight: $fw-bold;
+      text-transform: uppercase;
+      font-size: 30px;
+      text-align: center;
+    }
+    &__ctn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 60px 0;
+    }
+    &__imgCtn {
+      max-width: 300px;
+    }
+    &__img {
+      width: 100%;
+
+      object-fit: cover;
+    }
+    &__content {
+      max-width: 500px;
+    }
+    &__single {
+      margin: 5px;
+    }
+    &__text {
+      font-size: 16px;
+      margin: 5px;
+      span {
+        color: $teal;
+      }
+    }
+    &__lineCtn {
+      width: 100%;
+      margin-left: 10px;
+      display: none;
+    }
+    &__line {
+      height: 1px;
+      width: 100%;
+      background-color: $teal;
+      position: relative;
+      margin-left: -30px;
+      &::after {
+        content: url(https://raw.githubusercontent.com/eStoreLabs/230206-KF-02-Klosterfrau-Oyono-ZAWISZA/main/img/dot.png);
+        display: inline-block;
+        position: absolute;
+        left: -30px;
+        top: -20px;
+        transform: scale(0.6);
+      }
+    }
+    &__iconsCtn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    &__icon {
+      width: 80px;
+      margin: 0 auto;
+      display: block;
+    }
+    &__iconSingle {
+      width: 110px;
+      margin: 10px;
+      height: 170px;
+    }
+    &__iconText {
+      font-size: 13px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .es-ingr {
+    background: rgb(12, 62, 105);
+    background: linear-gradient(
+      180deg,
+      rgba(12, 62, 105, 1) 65%,
+      rgba(24, 25, 42, 1) 100%
+    );
+    padding: 15px;
+    &__title {
+      margin: 0;
+      font-family: $title;
+
+      font-weight: $fw-bold;
+      text-transform: uppercase;
+      font-size: 30px;
+      text-align: center;
+    }
+    &__subtitle {
+      font-size: 20px;
+      text-align: center;
+      span {
+        color: $teal;
+      }
+    }
+    &__ctn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    &__img {
+      width: 300px;
+    }
+    &__table {
+      border-spacing: 10px;
+      border: 1px solid $white;
+      border-radius: 15px;
+      border-collapse: separate;
+    }
+    &__th {
+      text-transform: uppercase;
+      font-family: $title;
+      font-weight: $fw-bold;
+      font-size: 16px;
+      text-align: left;
+      padding: 0px 10px;
+      &--teal {
+        color: $teal;
+      }
+    }
+    &__td {
+      font-size: 16px;
+      padding: 5px 10px;
+      border-top: 1px solid $white;
+      em {
+        font-family: $title;
+        font-weight: $fw-bold;
+        opacity: 0.8;
+      }
+    }
+  }
+  .es-claims {
+    font-weight: $fw-light;
+    line-height: 1.5;
+    padding: 20px 15px;
+    &__item {
+      font-size: 12px;
+      margin: 0;
+      width: 100%;
+    }
+  }
+  .es-footer {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    &__logo {
+      max-width: 250px;
+    }
+    &__text {
+      min-width: 300px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $title;
+      font-weight: $fw-bold;
+    }
+  }
+
+  @media (min-width: 760px) {
+    .es-kv {
+      position: relative;
+      &__circlesBg {
+        position: absolute;
+        top: 0;
+        right: 100px;
+        display: block;
+      }
+      &__bottomImg {
+        position: absolute;
+        bottom: -50px;
+        display: block;
+      }
+      &__title {
+        font-size: 60px;
+      }
+      &__ctn {
+        flex-direction: row;
+      }
+      &__packshotCtn {
+        max-width: 500px;
+        z-index: 2;
+      }
+      &__content {
+        margin-left: -10px;
+        z-index: 0;
+      }
+      &__single {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        &--first {
+          animation: es-slideIn 1s alternate;
+        }
+        &--second {
+          animation: es-slideIn 1.5s alternate;
+        }
+      }
+      &__desc {
+        text-align: left;
+      }
+      &__bottomImg {
+        display: block;
+      }
+    }
+    .es-info {
+      &__desc {
+        width: 68%;
+        text-align: left;
+      }
+    }
+    .es-phase {
+      flex-direction: row;
+      &__content {
+        max-width: 500px;
+      }
+      &__lineCtn {
+        display: block;
+      }
+      &__line {
+        transition: all 0.4s ease;
+      }
+      &__imgCtn {
+        margin: 0;
+      }
+      &__img {
+        margin-left: -10px;
+        margin-top: -20px;
+      }
+    }
+    .es-phase__single:hover .es-phase__line {
+      transform: translateX(20px);
+    }
+    .es-icons {
+      &__title {
+        text-align: left;
+      }
+    }
+    .es-results {
+      &__title {
+        text-align: left;
+      }
+      &__lineCtn {
+        display: block;
+      }
+      &__line {
+        transition: all 0.4s ease;
+      }
+      &__icon {
+        transition: all 0.4s ease;
+      }
+      &__imgCtn {
+        max-width: 450px;
+      }
+      &__img {
+        margin-right: -120px;
+      }
+      &__content {
+        margin-top: -80px;
+        margin-left: -50px;
+      }
+    }
+    .es-results__single:hover .es-results__line {
+      transform: translateX(-15px);
+    }
+    .es-results__iconSingle:hover .es-results__icon {
+      transform: translateY(-15px);
+    }
+    .es-ingr {
+      &__title {
+        text-align: left;
+      }
+      &__subtitle {
+        text-align: left;
+      }
+      &__th {
+        padding: 0px 30px;
+      }
+      &__td {
+        padding: 5px 30px;
+      }
+    }
+    .es-claims {
+      padding: 20px 15px;
+      &__item {
+        font-size: 12px;
+        margin: 0;
+        width: 90%;
+      }
+    }
+
+    .es-footer {
+      justify-content: space-between;
+    }
+  }
+  @media (min-width: 900px) {
+  }
+}
