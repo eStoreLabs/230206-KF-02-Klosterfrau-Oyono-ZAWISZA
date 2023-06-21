@@ -585,6 +585,7 @@
   .es-oyono .es-phase__line,
   #es-oyono .es-phase__line {
     transition: all 0.4s ease;
+    color: transparent;
   }
   .es-oyono .es-phase__imgCtn,
   #es-oyono .es-phase__imgCtn {
@@ -614,6 +615,7 @@
   .es-oyono .es-results__line,
   #es-oyono .es-results__line {
     transition: all 0.4s ease;
+    color: transparent;
   }
   .es-oyono .es-results__icon,
   #es-oyono .es-results__icon {
