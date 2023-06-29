@@ -1,18 +1,18 @@
 // @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300;400;500;600&display=swap');
 @font-face {
   font-family: "HelveticaNeueLTPro-Cn";
-  src: url("https://estorelabs.github.io/es-hosting/fonts/HelveticaNeueLTPro/HelveticaNeueLTPro-Cn.otf") format("opentype");
+  src: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230206-KF-02-Klosterfrau-Oyono-ZAWISZA/assets/fonts/HelveticaNeueLTPro-Cn.otf") format("opentype");
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "HelveticaNeueLTProBd";
-  src: url("https://estorelabs.github.io/es-hosting/fonts/HelveticaNeueLTPro/HelveticaNeueLTProBd.otf") format("opentype");
+  src: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230206-KF-02-Klosterfrau-Oyono-ZAWISZA/assets/fonts/HelveticaNeueLTProBd.otf") format("opentype");
   font-display: swap;
 }
 @font-face {
   font-family: "HelveticaNeueLTPro-ThCn";
-  src: url("https://estorelabs.github.io/es-hosting/fonts/HelveticaNeueLTPro/HelveticaNeueLTPro-ThCn.otf") format("opentype");
+  src: url("https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230206-KF-02-Klosterfrau-Oyono-ZAWISZA/assets/fonts/HelveticaNeueLTPro-ThCn.otf") format("opentype");
   font-weight: 600;
   font-display: swap;
 }
@@ -252,7 +252,7 @@ $white: #fff;
       background-color: $teal;
       position: relative;
       &::after {
-        content: url(https://raw.githubusercontent.com/eStoreLabs/230206-KF-02-Klosterfrau-Oyono-ZAWISZA/main/img/dot.png);
+        content: url(https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230206-KF-02-Klosterfrau-Oyono-ZAWISZA/assets/img/dot.png);
         display: inline-block;
         transform: scale(0.6);
         position: absolute;
@@ -355,7 +355,7 @@ $white: #fff;
       position: relative;
       margin-left: -30px;
       &::after {
-        content: url(https://raw.githubusercontent.com/eStoreLabs/230206-KF-02-Klosterfrau-Oyono-ZAWISZA/main/img/dot.png);
+        content: url(https://s3.eu-central-1.amazonaws.com/cdn.rc-eu-central2.nexus.estorelabs.com/public/static/230206-KF-02-Klosterfrau-Oyono-ZAWISZA/assets/img/dot.png);
         display: inline-block;
         position: absolute;
         left: -30px;
@@ -575,7 +575,6 @@ $white: #fff;
         margin-right: -120px;
       }
       &__content {
-        margin-top: -80px;
         margin-left: -50px;
       }
     }
